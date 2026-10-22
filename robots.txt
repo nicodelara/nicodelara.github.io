@@ -1,0 +1,5 @@
+# Todos los crawlers (buscadores y de IA) son bienvenidos
+User-agent: *
+Allow: /
+
+Sitemap: https://nicodelara.github.io/sitemap.xml

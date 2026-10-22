@@ -1,0 +1,16 @@
+{
+  "name": "nicodelara.github.io",
+  "private": true,
+  "description": "CV de Nicolás de Lara. Sitio estático: editá cv-data.js.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "pdf": "node scripts/pdf.mjs",
+    "all": "node scripts/build.mjs && node scripts/pdf.mjs"
+  },
+  "devDependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright-core": "^1.64.1"
+  },
+  "engines": { "node": ">=18" }
+}

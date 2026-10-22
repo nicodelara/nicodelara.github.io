@@ -1,0 +1,140 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Nicolás de Lara",
+    "label": "Senior Backend Engineer",
+    "image": "https://nicodelara.github.io/assets/images/profile.png",
+    "email": "nicodelara@gmail.com",
+    "url": "https://nicodelara.github.io/",
+    "summary": "Backend developer passionate about creating scalable and efficient solutions. Experience in system architecture and API development.",
+    "location": {
+      "city": "Trenque Lauquen",
+      "region": "Buenos Aires",
+      "countryCode": "AR"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "nicodelara",
+        "url": "https://www.linkedin.com/in/nicodelara/"
+      },
+      {
+        "network": "GitHub",
+        "username": "nicodelara",
+        "url": "https://github.com/nicodelara"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Ualá",
+      "position": "Senior Backend Engineer",
+      "location": "Remote",
+      "startDate": "2025-05",
+      "summary": "Work mode: Remote. Backend microservices development for the fintech platform, first on the Onboarding team and then on the Login/Auth team.",
+      "highlights": [
+        "Onboarding: built user sign-up and identity verification flows",
+        "Onboarding: integrated external verification (KYC) providers",
+        "Login/Auth: built authentication services",
+        "Login/Auth: key contributor to user re-authentication in sensitive flows",
+        "Focus on scalability, availability and observability of critical services"
+      ]
+    },
+    {
+      "name": "Flat.mx (Clau.com)",
+      "position": "Senior Backend Engineer",
+      "location": "Remote",
+      "startDate": "2022-03",
+      "endDate": "2025-03",
+      "summary": "Work mode: Remote. Led the development and maintenance of essential microservices, ensuring scalability and availability.",
+      "highlights": [
+        "Collaborated with multidisciplinary teams",
+        "Contributed to system architecture design",
+        "Optimized existing infrastructure"
+      ]
+    },
+    {
+      "name": "Mercado Libre",
+      "position": "Ssr Backend Engineer",
+      "startDate": "2019-10",
+      "endDate": "2022-03",
+      "summary": "Work mode: On-site. Worked with the KYC (Know Your Customer) and Fraud Prevention team.",
+      "highlights": [
+        "Enhanced security measures",
+        "Ensured compliance with regulatory requirements"
+      ]
+    },
+    {
+      "name": "Devsar",
+      "position": "Full Stack Developer",
+      "startDate": "2019-05",
+      "endDate": "2019-10",
+      "summary": "Work mode: On-site. Developed and deployed websites for financial institutions.",
+      "highlights": [
+        "Worked in a software factory team",
+        "Ensured high-quality delivery"
+      ]
+    },
+    {
+      "name": "Dirección Provincial de Gobierno Digital",
+      "position": "Full Stack Developer",
+      "startDate": "2017-07",
+      "endDate": "2019-10",
+      "summary": "Work mode: On-site. Provided digital citizen support and information management.",
+      "highlights": [
+        "Addressed citizen needs",
+        "Delivered important information through digital channels"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Facultad de Informática - Universidad Nacional de La Plata",
+      "studyType": "Analista Programador Universitario",
+      "startDate": "2010-01",
+      "endDate": "2016-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": [
+        "Go (Golang)",
+        "Python",
+        "Scripting"
+      ]
+    },
+    {
+      "name": "Data",
+      "keywords": [
+        "SQL/NoSQL"
+      ]
+    },
+    {
+      "name": "Architecture",
+      "keywords": [
+        "Microservices"
+      ]
+    },
+    {
+      "name": "Cloud",
+      "keywords": [
+        "AWS"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional"
+    }
+  ],
+  "meta": {
+    "canonical": "https://nicodelara.github.io/resume.json",
+    "lastModified": "2026-10-22"
+  }
+}

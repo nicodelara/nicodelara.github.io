@@ -1,0 +1,65 @@
+# Arma el sitio desde cv-data.js y lo publica en GitHub Pages.
+# Requisito (una sola vez): Settings → Pages → Build and deployment → Source: "GitHub Actions".
+name: Build y deploy del CV
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch: {}          # botón "Run workflow" en la pestaña Actions
+  schedule:
+    - cron: "0 9 1 * *"         # el 1° de cada mes: actualiza duraciones ("1 año 6 meses") y PDFs
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Instalar herramientas de desarrollo (playwright-core, pdf-lib)
+        run: npm ci
+
+      - name: Prerender (index.html, cv.md, cv.es.md, resume.json, llms.txt, robots.txt, sitemap.xml)
+        run: node scripts/build.mjs
+
+      - name: Generar PDFs (ES / EN) con Chrome headless
+        # ubuntu-latest ya trae Google Chrome; scripts/pdf.mjs lo encuentra solo
+        run: node scripts/pdf.mjs
+
+      - name: Armar la carpeta publicable
+        run: |
+          mkdir -p _site
+          find . -mindepth 1 -maxdepth 1 \
+            ! -name .git ! -name .github ! -name node_modules ! -name _site \
+            ! -name scripts ! -name 'package*.json' ! -name .gitignore \
+            -exec cp -R {} _site/ \;
+          ls -la _site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

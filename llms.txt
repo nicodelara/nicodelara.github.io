@@ -1,0 +1,29 @@
+# Nicolás de Lara
+
+> Senior Backend Engineer. Backend developer passionate about creating scalable and efficient solutions. Experience in system architecture and API development.
+
+Location: Trenque Lauquen, Buenos Aires, Argentina · Remote
+
+Personal website and CV/résumé of Nicolás de Lara. The same content is available in these machine-readable formats (generated from a single source on 2026-10-22):
+
+## CV
+
+- [CV in English (Markdown)](https://nicodelara.github.io/cv.md): full résumé as plain Markdown
+- [CV en español (Markdown)](https://nicodelara.github.io/cv.es.md): CV completo en español
+- [Résumé PDF (English)](https://nicodelara.github.io/cv-nicolas-de-lara-en.pdf)
+- [CV PDF (español)](https://nicodelara.github.io/cv-nicolas-de-lara-es.pdf)
+- [JSON Resume](https://nicodelara.github.io/resume.json): structured data (jsonresume.org schema)
+
+## Experience
+
+- Senior Backend Engineer — Ualá (2025-05 – present, Remote)
+- Senior Backend Engineer — Flat.mx (Clau.com) (2022-03 – 2025-03, Remote)
+- Ssr Backend Engineer — Mercado Libre (2019-10 – 2022-03, On-site)
+- Full Stack Developer — Devsar (2019-05 – 2019-10, On-site)
+- Full Stack Developer — Dirección Provincial de Gobierno Digital (2017-07 – 2019-10, On-site)
+
+## Contact
+
+- Email: nicodelara@gmail.com
+- LinkedIn: https://www.linkedin.com/in/nicodelara/
+- GitHub: https://github.com/nicodelara
