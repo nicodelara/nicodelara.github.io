@@ -111,7 +111,7 @@
       return String(u || "").replace(/^mailto:/i, "").replace(/^tel:/i, "").replace(/^https?:\/\/(www\.)?/i, "").replace(/\/$/, "");
     }
     function siteUrl() { return String((cv.meta && cv.meta.url) || "").replace(/\/?$/, "/"); }
-    function pdfFile(l) { return "cv-" + slug(t((cv.profile || {}).name)) + "-" + (l || lang) + ".pdf"; }
+    function pdfFile(l) { return String(t((cv.profile || {}).name) || "CV").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "") + "-CV-" + (l || lang).toUpperCase() + ".pdf"; }
     function skillName(s) { return t(typeof s === "object" && s && s.name !== undefined ? s.name : s); }
     function skillItem(s) { return typeof s === "object" && s && s.name !== undefined ? s : { name: s }; }
     function isCurrent(e) { return !e.end; }

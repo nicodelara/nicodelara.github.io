@@ -87,4 +87,4 @@ Enero 2010 – Enero 2016 (2010-01 – 2016-01)
 
 ---
 
-Actualizado: 2026-10-22 · https://nicodelara.github.io/ · PDF: https://nicodelara.github.io/cv-nicolas-de-lara-es.pdf
+Actualizado: 2026-10-23 · https://nicodelara.github.io/ · PDF: https://nicodelara.github.io/Nicolas-de-Lara-CV-ES.pdf

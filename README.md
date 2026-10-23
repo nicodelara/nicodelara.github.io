@@ -17,7 +17,7 @@ Si quiero verlo antes de subir, o generar los archivos en mi compu (opcional):
 ```bash
 npm install            # una sola vez (instala playwright-core y pdf-lib, solo para desarrollo)
 npm run build          # = node scripts/build.mjs  → index.html, cv.md, cv.es.md, resume.json, llms.txt, robots.txt, sitemap.xml
-npm run pdf            # = node scripts/pdf.mjs    → cv-nicolas-de-lara-es.pdf y cv-nicolas-de-lara-en.pdf
+npm run pdf            # = node scripts/pdf.mjs    → Nicolas-de-Lara-CV-ES.pdf y Nicolas-de-Lara-CV-EN.pdf
 npm run all            # las dos cosas
 python3 -m http.server 8000   # y abro http://localhost:8000
 ```
@@ -110,7 +110,7 @@ Logos nuevos: buscarlos en https://simpleicons.org (CC0), copiar el `path` del S
 - **Versiones de texto**: `cv.md` (inglés), `cv.es.md` (español), `resume.json` ([JSON Resume](https://jsonresume.org)) y `llms.txt` (índice para modelos de IA). `robots.txt` deja pasar a todos los crawlers y `sitemap.xml` lista todo.
 - **PDFs**: una columna, texto real (seleccionable), fuentes embebidas, títulos estándar (Experience/Experiencia, Education, Skills, Languages), fechas consistentes, links clickeables y metadatos (título, autor, asunto, palabras clave, idioma). Lo decorativo (banda, línea de timeline, puntitos, cursor) es dibujo, no texto.
 
-Para chequear un PDF como lo vería un ATS: `pdftotext cv-nicolas-de-lara-es.pdf -` (o abrirlo, Ctrl+A, copiar y pegar en un editor de texto).
+Para chequear un PDF como lo vería un ATS: `pdftotext Nicolas-de-Lara-CV-ES.pdf -` (o abrirlo, Ctrl+A, copiar y pegar en un editor de texto).
 
 ---
 
@@ -119,8 +119,8 @@ Para chequear un PDF como lo vería un ATS: `pdftotext cv-nicolas-de-lara-es.pdf
 ```
 cv-data.js                  ← TUS DATOS (lo único que hace falta editar)
 index.html                  ← página (el contenido entre <!-- build:... --> lo escribe el build)
-cv-nicolas-de-lara-es.pdf   ← PDF en español (generado)
-cv-nicolas-de-lara-en.pdf   ← PDF en inglés (generado)
+Nicolas-de-Lara-CV-ES.pdf   ← PDF en español (generado)
+Nicolas-de-Lara-CV-EN.pdf   ← PDF en inglés (generado)
 cv.md, cv.es.md             ← CV en Markdown (generado)
 resume.json                 ← JSON Resume (generado)
 llms.txt, robots.txt, sitemap.xml   ← para buscadores y crawlers de IA (generado)
