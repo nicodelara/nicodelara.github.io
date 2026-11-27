@@ -6,7 +6,7 @@
     "image": "https://nicodelara.github.io/assets/images/profile.png",
     "email": "nicodelara@gmail.com",
     "url": "https://nicodelara.github.io/",
-    "summary": "Backend developer passionate about creating scalable and efficient solutions. Experience in system architecture and API development.",
+    "summary": "Senior Backend Engineer with 9+ years of experience specializing in backend microservices, API development, and system architecture using Go, Python, and AWS. Experience building onboarding, identity verification (KYC), fraud-prevention, and authentication services at Ualá, Flat.mx (Clau.com), and Mercado Libre, including high-throughput systems serving millions of users and critical financial flows such as transfers and credit, with a focus on scalability, availability, and observability.",
     "location": {
       "city": "Trenque Lauquen",
       "region": "Buenos Aires",
@@ -33,11 +33,9 @@
       "startDate": "2025-05",
       "summary": "Work mode: Remote. Backend microservices development for the fintech platform, first on the Onboarding team and then on the Login/Auth team.",
       "highlights": [
-        "Onboarding: built user sign-up and identity verification flows",
-        "Onboarding: integrated external verification (KYC) providers",
-        "Login/Auth: built authentication services",
-        "Login/Auth: key contributor to user re-authentication in sensitive flows",
-        "Focus on scalability, availability and observability of critical services"
+        "Engineered user sign-up and identity-verification flows on the Onboarding team, integrating external KYC providers to enable compliant customer acquisition.",
+        "Owned critical-path step-up authentication challenges (PIN, Face ID / biometrics, and face match) required for money transfers, built for low latency and strong observability in the transfer flow.",
+        "Expanded the challenge mechanism so it could be adopted by many other teams and reused in additional flows such as credit and loans, each with its own rules and use cases."
       ]
     },
     {
@@ -48,20 +46,19 @@
       "endDate": "2025-03",
       "summary": "Work mode: Remote. Led the development and maintenance of essential microservices, ensuring scalability and availability.",
       "highlights": [
-        "Collaborated with multidisciplinary teams",
-        "Contributed to system architecture design",
-        "Optimized existing infrastructure"
+        "Built a property ingestion and deduplication pipeline that aggregated listings from around 10 partner portals, each with thousands of properties.",
+        "Detected duplicate listings across portals from key attributes, and tracked availability, sold status, and changes to price and property details (such as bathrooms) across a large inventory."
       ]
     },
     {
       "name": "Mercado Libre",
-      "position": "Ssr Backend Engineer",
+      "position": "Backend Engineer",
       "startDate": "2019-10",
       "endDate": "2022-03",
       "summary": "Work mode: On-site. Worked with the KYC (Know Your Customer) and Fraud Prevention team.",
       "highlights": [
-        "Enhanced security measures",
-        "Ensured compliance with regulatory requirements"
+        "Built and maintained high-throughput notification processing for KYC, notifying millions of users via email, push, and periodic notifications.",
+        "Worked on the KYC (Know Your Customer) and Fraud Prevention team, supporting security measures and regulatory compliance for customer identity verification."
       ]
     },
     {
@@ -71,8 +68,7 @@
       "endDate": "2019-10",
       "summary": "Work mode: On-site. Developed and deployed websites for financial institutions.",
       "highlights": [
-        "Worked in a software factory team",
-        "Ensured high-quality delivery"
+        "Developed and deployed websites for financial institutions as part of a software-factory team, delivering production-ready sites to a high quality standard."
       ]
     },
     {
@@ -82,8 +78,8 @@
       "endDate": "2019-10",
       "summary": "Work mode: On-site. Provided digital citizen support and information management.",
       "highlights": [
-        "Addressed citizen needs",
-        "Delivered important information through digital channels"
+        "Delivered official information and digital citizen support through digital channels, addressing citizen needs.",
+        "Managed information through digital systems in support of citizen-facing services."
       ]
     }
   ],
@@ -97,29 +93,36 @@
   ],
   "skills": [
     {
-      "name": "Programming",
+      "name": "Languages",
       "keywords": [
         "Go (Golang)",
-        "Python",
-        "Scripting"
+        "Python"
       ]
     },
     {
-      "name": "Data",
+      "name": "Cloud & DevOps",
       "keywords": [
-        "SQL/NoSQL"
+        "AWS (Lambda, SQS, SNS, RDS, DynamoDB)",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "CI/CD (GitHub Actions; previously Jenkins)"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "DynamoDB"
       ]
     },
     {
       "name": "Architecture",
       "keywords": [
-        "Microservices"
-      ]
-    },
-    {
-      "name": "Cloud",
-      "keywords": [
-        "AWS"
+        "Microservices",
+        "System Architecture",
+        "API Development"
       ]
     }
   ],
@@ -135,6 +138,6 @@
   ],
   "meta": {
     "canonical": "https://nicodelara.github.io/resume.json",
-    "lastModified": "2026-10-23"
+    "lastModified": "2026-11-27"
   }
 }

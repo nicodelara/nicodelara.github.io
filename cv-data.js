@@ -23,8 +23,8 @@ window.CV = {
       en: "Nicolás de Lara - Senior Backend Engineer | Resume",
     },
     description: {
-      es: "Portfolio de Nicolás de Lara, Senior Backend Engineer especializado en desarrollo de APIs y arquitectura de sistemas.",
-      en: "Personal portfolio of Nicolás de Lara, Senior Backend Engineer specialized in API development and system architecture.",
+      es: "CV de Nicolás de Lara, Senior Backend Engineer especializado en microservicios, APIs y arquitectura de sistemas con Go, Python y AWS.",
+      en: "Résumé of Nicolás de Lara, Senior Backend Engineer specializing in microservices, APIs, and system architecture with Go, Python, and AWS.",
     },
   },
 
@@ -39,8 +39,8 @@ window.CV = {
     },
     address: { city: "Trenque Lauquen", region: "Buenos Aires", countryCode: "AR" },
     summary: {
-      es: "Desarrollador backend apasionado por crear soluciones escalables y eficientes. Experiencia en arquitectura de sistemas y desarrollo de APIs.",
-      en: "Backend developer passionate about creating scalable and efficient solutions. Experience in system architecture and API development.",
+      es: "Senior Backend Engineer con más de 9 años de experiencia, especializado en microservicios backend, desarrollo de APIs y arquitectura de sistemas con Go, Python y AWS. Experiencia construyendo servicios de onboarding, verificación de identidad (KYC), prevención de fraude y autenticación en Ualá, Flat.mx (Clau.com) y Mercado Libre, incluyendo sistemas de alto throughput que sirven a millones de usuarios y flujos financieros críticos como transferencias y crédito, con foco en la escalabilidad, la disponibilidad y la observabilidad.",
+      en: "Senior Backend Engineer with 9+ years of experience specializing in backend microservices, API development, and system architecture using Go, Python, and AWS. Experience building onboarding, identity verification (KYC), fraud-prevention, and authentication services at Ualá, Flat.mx (Clau.com), and Mercado Libre, including high-throughput systems serving millions of users and critical financial flows such as transfers and credit, with a focus on scalability, availability, and observability.",
     },
     image: "assets/images/profile.png", // ruta relativa (sin "/" adelante)
     initials: "ND", // se muestran si la foto no carga
@@ -67,11 +67,9 @@ window.CV = {
         en: "Backend microservices development for the fintech platform, first on the Onboarding team and then on the Login/Auth team.",
       },
       highlights: [
-        { es: "Onboarding: desarrollo de los flujos de alta de usuarios y validación de identidad", en: "Onboarding: built user sign-up and identity verification flows" },
-        { es: "Onboarding: integración con proveedores externos de verificación (KYC)", en: "Onboarding: integrated external verification (KYC) providers" },
-        { es: "Login/Auth: desarrollo de servicios de autenticación", en: "Login/Auth: built authentication services" },
-        { es: "Login/Auth: participación clave en la re-autenticación de usuarios en flujos sensibles", en: "Login/Auth: key contributor to user re-authentication in sensitive flows" },
-        { es: "Foco en escalabilidad, disponibilidad y observabilidad de servicios críticos", en: "Focus on scalability, availability and observability of critical services" },
+        { es: "Diseñé e implementé los flujos de alta de usuarios y verificación de identidad en el equipo de Onboarding, integrando proveedores externos de KYC para habilitar la captación de clientes en cumplimiento normativo.", en: "Engineered user sign-up and identity-verification flows on the Onboarding team, integrating external KYC providers to enable compliant customer acquisition." },
+        { es: "Fui responsable de los desafíos de autenticación step-up en el camino crítico de las transferencias de dinero (PIN, Face ID / biometría y face match), pensados para baja latencia y una observabilidad sólida en ese flujo.", en: "Owned critical-path step-up authentication challenges (PIN, Face ID / biometrics, and face match) required for money transfers, built for low latency and strong observability in the transfer flow." },
+        { es: "Extendí el mecanismo de desafíos para que lo adoptaran muchos otros equipos y se reutilizara en flujos adicionales como créditos y préstamos, cada uno con sus propias reglas y casuísticas.", en: "Expanded the challenge mechanism so it could be adopted by many other teams and reused in additional flows such as credit and loans, each with its own rules and use cases." },
       ],
     },
     {
@@ -85,13 +83,12 @@ window.CV = {
         en: "Led the development and maintenance of essential microservices, ensuring scalability and availability.",
       },
       highlights: [
-        { es: "Colaboración con equipos multidisciplinarios", en: "Collaborated with multidisciplinary teams" },
-        { es: "Participación en el diseño de la arquitectura de sistemas", en: "Contributed to system architecture design" },
-        { es: "Optimización de la infraestructura existente", en: "Optimized existing infrastructure" },
+        { es: "Construí un pipeline de ingesta y deduplicación de propiedades que agregaba avisos de alrededor de 10 portales partners, cada uno con miles de propiedades.", en: "Built a property ingestion and deduplication pipeline that aggregated listings from around 10 partner portals, each with thousands of properties." },
+        { es: "Detecté avisos duplicados entre portales a partir de atributos clave, y registré disponibilidad, estado de vendido y cambios de precio y de características (como cantidad de baños) sobre un inventario grande.", en: "Detected duplicate listings across portals from key attributes, and tracked availability, sold status, and changes to price and property details (such as bathrooms) across a large inventory." },
       ],
     },
     {
-      role: "Ssr Backend Engineer",
+      role: "Backend Engineer",
       company: "Mercado Libre",
       modality: { es: "Presencial", en: "On-site" },
       start: "2019-10",
@@ -101,8 +98,8 @@ window.CV = {
         en: "Worked with the KYC (Know Your Customer) and Fraud Prevention team.",
       },
       highlights: [
-        { es: "Mejora de las medidas de seguridad", en: "Enhanced security measures" },
-        { es: "Cumplimiento de los requisitos regulatorios", en: "Ensured compliance with regulatory requirements" },
+        { es: "Construí y mantuve el procesamiento de notificaciones de alto throughput para KYC, notificando a millones de usuarios por email, push y notificaciones periódicas.", en: "Built and maintained high-throughput notification processing for KYC, notifying millions of users via email, push, and periodic notifications." },
+        { es: "Trabajé en el equipo de KYC (Know Your Customer) y Prevención de Fraude, apoyando las medidas de seguridad y el cumplimiento regulatorio de la verificación de identidad de clientes.", en: "Worked on the KYC (Know Your Customer) and Fraud Prevention team, supporting security measures and regulatory compliance for customer identity verification." },
       ],
     },
     {
@@ -116,8 +113,7 @@ window.CV = {
         en: "Developed and deployed websites for financial institutions.",
       },
       highlights: [
-        { es: "Trabajo en un equipo de software factory", en: "Worked in a software factory team" },
-        { es: "Entregas de alta calidad", en: "Ensured high-quality delivery" },
+        { es: "Desarrollé y desplegué sitios web para entidades financieras en un equipo de software factory, con entregas productivas de alta calidad.", en: "Developed and deployed websites for financial institutions as part of a software-factory team, delivering production-ready sites to a high quality standard." },
       ],
     },
     {
@@ -131,8 +127,8 @@ window.CV = {
         en: "Provided digital citizen support and information management.",
       },
       highlights: [
-        { es: "Atención de las necesidades de la ciudadanía", en: "Addressed citizen needs" },
-        { es: "Difusión de información relevante por canales digitales", en: "Delivered important information through digital channels" },
+        { es: "Brindé soporte digital a la ciudadanía y difundí información oficial por canales digitales, atendiendo las necesidades de los ciudadanos.", en: "Delivered official information and digital citizen support through digital channels, addressing citizen needs." },
+        { es: "Gestioné información a través de sistemas digitales en apoyo de los servicios a la ciudadanía.", en: "Managed information through digital systems in support of citizen-facing services." },
       ],
     },
   ],
@@ -149,24 +145,37 @@ window.CV = {
   /* SKILLS agrupadas por categoría. icon = una clave de assets/js/icons.js */
   skills: [
     {
-      category: { es: "Lenguajes", en: "Programming" },
+      category: { es: "Lenguajes", en: "Languages" },
       items: [
         { name: "Go (Golang)", icon: "go" },
         { name: "Python", icon: "python" },
-        { name: "Scripting", icon: "bash" },
       ],
     },
     {
-      category: { es: "Datos", en: "Data" },
-      items: [{ name: "SQL/NoSQL", icon: "database" }],
+      category: { es: "Cloud & DevOps", en: "Cloud & DevOps" },
+      items: [
+        { name: "AWS (Lambda, SQS, SNS, RDS, DynamoDB)", icon: "cloud" },
+        { name: "Docker", icon: "cloud" },
+        { name: "Kubernetes", icon: "cloud" },
+        { name: "Terraform", icon: "terminal" },
+        { name: { es: "CI/CD (GitHub Actions; antes Jenkins)", en: "CI/CD (GitHub Actions; previously Jenkins)" }, icon: "code" },
+      ],
+    },
+    {
+      category: { es: "Bases de datos", en: "Databases" },
+      items: [
+        { name: "PostgreSQL", icon: "database" },
+        { name: "MySQL", icon: "database" },
+        { name: "DynamoDB", icon: "database" },
+      ],
     },
     {
       category: { es: "Arquitectura", en: "Architecture" },
-      items: [{ name: { es: "Microservicios", en: "Microservices" }, icon: "microservices" }],
-    },
-    {
-      category: { es: "Cloud", en: "Cloud" },
-      items: [{ name: "AWS", icon: "cloud" }],
+      items: [
+        { name: { es: "Microservicios", en: "Microservices" }, icon: "microservices" },
+        { name: { es: "Arquitectura de sistemas", en: "System Architecture" }, icon: "code" },
+        { name: { es: "Desarrollo de APIs", en: "API Development" }, icon: "code" },
+      ],
     },
   ],
 

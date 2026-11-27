@@ -1,10 +1,10 @@
 # Nicolás de Lara
 
-> Senior Backend Engineer. Backend developer passionate about creating scalable and efficient solutions. Experience in system architecture and API development.
+> Senior Backend Engineer. Senior Backend Engineer with 9+ years of experience specializing in backend microservices, API development, and system architecture using Go, Python, and AWS. Experience building onboarding, identity verification (KYC), fraud-prevention, and authentication services at Ualá, Flat.mx (Clau.com), and Mercado Libre, including high-throughput systems serving millions of users and critical financial flows such as transfers and credit, with a focus on scalability, availability, and observability.
 
 Location: Trenque Lauquen, Buenos Aires, Argentina · Remote
 
-Personal website and CV/résumé of Nicolás de Lara. The same content is available in these machine-readable formats (generated from a single source on 2026-10-23):
+Personal website and CV/résumé of Nicolás de Lara. The same content is available in these machine-readable formats (generated from a single source on 2026-11-27):
 
 ## CV
 
@@ -18,7 +18,7 @@ Personal website and CV/résumé of Nicolás de Lara. The same content is availa
 
 - Senior Backend Engineer — Ualá (2025-05 – present, Remote)
 - Senior Backend Engineer — Flat.mx (Clau.com) (2022-03 – 2025-03, Remote)
-- Ssr Backend Engineer — Mercado Libre (2019-10 – 2022-03, On-site)
+- Backend Engineer — Mercado Libre (2019-10 – 2022-03, On-site)
 - Full Stack Developer — Devsar (2019-05 – 2019-10, On-site)
 - Full Stack Developer — Dirección Provincial de Gobierno Digital (2017-07 – 2019-10, On-site)
 
