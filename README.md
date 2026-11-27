@@ -4,6 +4,8 @@ Mi CV online. HTML + CSS + un poco de JavaScript, con modo claro/oscuro, españo
 
 **Lo único que edito es `cv-data.js`.** Todo lo demás (la página prerenderizada, los PDFs, las versiones en Markdown y los archivos para buscadores e IA) se genera solo a partir de ese archivo.
 
+La excepción son los PDF ATS (texto plano, sin foto): se editan en `scripts/ats/` y no pasan por `cv-data.js`.
+
 ---
 
 ## Cómo actualizo el CV
@@ -23,6 +25,12 @@ python3 -m http.server 8000   # y abro http://localhost:8000
 ```
 
 `npm run build` no necesita nada instalado (solo Node 18+). `npm run pdf` usa Google Chrome / Chromium que ya tenga instalado (si está en otro lugar: `CHROME_PATH=/ruta/al/chrome npm run pdf`). Opción: `node scripts/pdf.mjs --no-photo` genera los PDFs sin foto.
+
+Los PDF para sistemas de seguimiento de candidatos (una columna, sin foto ni íconos) se regeneran aparte, desde su HTML:
+
+```bash
+npm run pdf:ats        # = bash scripts/ats/render.sh → Nicolas-de-Lara-CV-ATS-ES.pdf y Nicolas-de-Lara-CV-ATS-EN.pdf
+```
 
 > ¿Y si me olvido de correr el build? No pasa nada: la Action lo corre en cada push. Y aunque no corra, el JavaScript de la página arma todo desde `cv-data.js`, así que en el navegador siempre se ve lo último.
 
@@ -121,6 +129,8 @@ cv-data.js                  ← TUS DATOS (lo único que hace falta editar)
 index.html                  ← página (el contenido entre <!-- build:... --> lo escribe el build)
 Nicolas-de-Lara-CV-ES.pdf   ← PDF en español (generado)
 Nicolas-de-Lara-CV-EN.pdf   ← PDF en inglés (generado)
+Nicolas-de-Lara-CV-ATS-ES.pdf   ← PDF ATS en español (texto plano; ver scripts/ats)
+Nicolas-de-Lara-CV-ATS-EN.pdf   ← PDF ATS en inglés (texto plano; ver scripts/ats)
 cv.md, cv.es.md             ← CV en Markdown (generado)
 resume.json                 ← JSON Resume (generado)
 llms.txt, robots.txt, sitemap.xml   ← para buscadores y crawlers de IA (generado)
@@ -133,6 +143,7 @@ assets/css/pdf.css          ← diseño de los PDFs
 assets/fonts/               ← Inter y JetBrains Mono (OFL); fonts/pdf/ = versiones estáticas para el PDF
 scripts/build.mjs           ← prerender + Markdown + JSON-LD + llms.txt/robots/sitemap (sin dependencias)
 scripts/pdf.mjs             ← PDFs con Chrome headless
+scripts/ats/                ← HTML, fuentes y render.sh de los PDF ATS (independiente de cv-data.js)
 .github/workflows/pages.yml ← build + PDFs + deploy en cada push
 package.json                ← scripts npm y herramientas de desarrollo
 favicon.svg, favicon.ico, apple-touch-icon.png

@@ -94,6 +94,8 @@ function headHTML() {
     `<link rel="alternate" type="text/markdown" hreflang="es" href="cv.es.md" title="CV (Español, Markdown)">`,
     `<link rel="alternate" type="application/pdf" hreflang="en" href="${esc(en.pdfFile("en"))}" title="CV (English, PDF)">`,
     `<link rel="alternate" type="application/pdf" hreflang="es" href="${esc(es.pdfFile("es"))}" title="CV (Español, PDF)">`,
+    `<link rel="alternate" type="application/pdf" hreflang="en" href="${esc(en.pdfAtsFile("en"))}" title="CV (English, ATS PDF)">`,
+    `<link rel="alternate" type="application/pdf" hreflang="es" href="${esc(es.pdfAtsFile("es"))}" title="CV (Español, ATS PDF)">`,
     `<link rel="alternate" type="application/json" href="resume.json" title="JSON Resume">`,
     `<meta property="og:type" content="profile">`,
     `<meta property="og:site_name" content="${esc(core.t(profile.name))}">`,
@@ -206,7 +208,7 @@ function llms() {
 }
 const robots = () => `# Todos los crawlers (buscadores y de IA) son bienvenidos\nUser-agent: *\nAllow: /\n\nSitemap: ${SITE}sitemap.xml\n`;
 function sitemap() {
-  const urls = ["", "cv.md", "cv.es.md", en.pdfFile("en"), es.pdfFile("es"), "resume.json", "llms.txt"];
+  const urls = ["", "cv.md", "cv.es.md", en.pdfFile("en"), es.pdfFile("es"), en.pdfAtsFile("en"), es.pdfAtsFile("es"), "resume.json", "llms.txt"];
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
     urls.map((u) => `  <url><loc>${SITE}${u}</loc><lastmod>${TODAY}</lastmod></url>`).join("\n") + "\n</urlset>\n";
 }

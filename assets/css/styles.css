@@ -131,6 +131,23 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .btn-primary:hover { filter: brightness(1.08); box-shadow: 0 6px 18px color-mix(in srgb, var(--accent) 35%, transparent); }
 .btn-primary .short { display: none; }
 
+/* Enlace secundario al PDF ATS. El botón principal no cambia. */
+.ats-link {
+  font-size: .78rem; font-weight: 600; line-height: 1.2; white-space: nowrap;
+  color: var(--subtle); text-decoration: underline; text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+}
+.ats-link:hover { color: var(--accent); text-decoration-color: currentColor; }
+/* En pantallas justas el rótulo completo pasa debajo de los controles, alineado a la derecha,
+   para no empujar el botón de descarga ni el selector de idioma. */
+@media (max-width: 52rem) {
+  .controls {
+    display: grid; grid-template-columns: auto auto auto; justify-content: end; align-items: center;
+    column-gap: .5rem; row-gap: .15rem;
+  }
+  .controls .ats-link { order: 1; grid-column: 1 / -1; justify-self: end; }
+}
+
 /* ---------- Layout ---------- */
 .layout {
   max-width: 74rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
