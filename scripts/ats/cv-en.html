@@ -1,0 +1,301 @@
+<!-- CV ATS: una columna, sin foto ni íconos. Fuente propia (no sale de cv-data.js). Regenerar con bash scripts/ats/render.sh -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nicolás de Lara — Senior Backend Engineer — Résumé</title>
+<meta name="author" content="Nicolás de Lara">
+<meta name="description" content="Résumé of Nicolás de Lara, Senior Backend Engineer specializing in backend microservices, APIs, and system architecture (Go, Python, AWS).">
+<style>
+
+@font-face {
+  font-family: "CV Serif";
+  src: url("fonts/CrimsonText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CV Serif";
+  src: url("fonts/CrimsonText-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CV Serif";
+  src: url("fonts/CrimsonText-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CV Serif";
+  src: url("fonts/CrimsonText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CV Serif";
+  src: url("fonts/CrimsonText-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: "Lib Sans";
+  src: url("fonts/LiberationSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lib Sans";
+  src: url("fonts/LiberationSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@page { size: A4; margin: 13mm 15mm 12mm 15mm; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: #fff;
+  color: #1c1c1c;
+}
+
+body {
+  font-family: "CV Serif", "Liberation Serif", Georgia, "Times New Roman", Times, serif;
+  font-size: 10.15pt;
+  line-height: 1.28;
+  font-weight: 450;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header { margin-bottom: 8pt; }
+
+h1 {
+  font-size: 21pt;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: #111;
+}
+
+.headline {
+  font-size: 11.2pt;
+  font-weight: 600;
+  margin-top: 1.5pt;
+  letter-spacing: 0.01em;
+  color: #222;
+}
+
+.contact {
+  margin-top: 5pt;
+  font-size: 9.35pt;
+  line-height: 1.38;
+  color: #222;
+}
+
+.contact .lbl { font-weight: 600; }
+
+h2 {
+  font-family: "Lib Sans", "Liberation Sans", Arial, Helvetica, sans-serif;
+  font-size: 8.3pt;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: #111;
+  border-bottom: 0.7pt solid #111;
+  padding-bottom: 2pt;
+  margin: 8pt 0 4pt;
+}
+
+.summary { text-align: justify; hyphens: auto; }
+
+.ph {
+  font-style: italic;
+  background: #f4f4f4;
+  padding: 0 0.12em;
+}
+
+.stack {
+  list-style: none;
+  margin: 0;
+}
+.stack li {
+  margin: 0 0 1.6pt;
+  line-height: 1.35;
+}
+.stack li .cat {
+  font-weight: 700;
+}
+
+.job { margin-bottom: 6pt; page-break-inside: avoid; break-inside: avoid; }
+.job:last-child { margin-bottom: 0; }
+
+.job-head, .edu-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12pt;
+}
+
+.role {
+  font-weight: 700;
+  font-size: 10.6pt;
+  line-height: 1.2;
+}
+
+.dates {
+  font-family: "Lib Sans", "Liberation Sans", Arial, Helvetica, sans-serif;
+  font-size: 8.6pt;
+  font-weight: 400;
+  white-space: nowrap;
+  color: #222;
+  letter-spacing: 0.01em;
+}
+
+.company {
+  font-style: italic;
+  font-size: 10.4pt;
+  margin: 0.2pt 0 1.8pt;
+}
+
+ul.bullets {
+  margin: 0 0 0 1.05em;
+  padding: 0;
+}
+ul.bullets li {
+  margin: 0 0 1.2pt;
+  padding-left: 0.15em;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.langs { margin: 0; }
+.edu-inst { font-style: italic; margin-top: 0.5pt; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Nicolás de Lara</h1>
+  <p class="headline">Senior Backend Engineer (Go / Python / AWS)</p>
+  <p class="contact">
+    <span class="lbl">Location:</span> Trenque Lauquen, Buenos Aires, Argentina (GMT-3) | Remote<br>
+    <span class="lbl">Email:</span> <a href="mailto:nicodelara@gmail.com">nicodelara@gmail.com</a>
+    &nbsp;|&nbsp; <span class="lbl">LinkedIn:</span> <a href="https://www.linkedin.com/in/nicodelara/">linkedin.com/in/nicodelara</a>
+    &nbsp;|&nbsp; <span class="lbl">GitHub / Portfolio:</span> <a href="https://github.com/nicodelara">github.com/nicodelara</a>
+    | <a href="https://nicodelara.github.io/">nicodelara.github.io</a>
+  </p>
+</header>
+
+<section>
+  <h2>Professional Summary</h2>
+  <p class="summary">Senior Backend Engineer with 9+ years of experience specializing in backend microservices, API development, and system architecture using Go, Python, and AWS. Experience building onboarding, identity verification (KYC), fraud-prevention, and authentication services at Ualá, Flat.mx (Clau.com), and Mercado Libre, including high-throughput systems serving millions of users and critical financial flows such as transfers and credit, with a focus on scalability, availability, and observability.</p>
+</section>
+
+<section>
+  <h2>Tech Stack / Core Competencies</h2>
+  <ul class="stack">
+    <li><span class="cat">Languages:</span> Go (Golang), Python</li>
+    <li><span class="cat">Cloud &amp; DevOps:</span> AWS (Lambda, SQS, SNS, RDS, DynamoDB), Docker, Kubernetes, Terraform, CI/CD (GitHub Actions; previously Jenkins)</li>
+    <li><span class="cat">Databases &amp; Tools:</span> PostgreSQL, MySQL, DynamoDB</li>
+    <li><span class="cat">Methodologies:</span> Microservices, System Architecture, API Development</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Professional Experience</h2>
+
+  <article class="job">
+    <div class="job-head">
+      <div class="role">Senior Backend Engineer</div>
+      <div class="dates">May 2025 – Present</div>
+    </div>
+    <p class="company">Ualá · Remote</p>
+    <ul class="bullets">
+      <li>Engineered user sign-up and identity-verification flows on the Onboarding team, integrating external KYC providers to enable compliant customer acquisition.</li>
+      <li>Owned critical-path step-up authentication challenges (PIN, Face ID / biometrics, and face match) required for money transfers, built for low latency and strong observability in the transfer flow.</li>
+      <li>Expanded the challenge mechanism so it could be adopted by many other teams and reused in additional flows such as credit and loans, each with its own rules and use cases.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head">
+      <div class="role">Senior Backend Engineer</div>
+      <div class="dates">March 2022 – March 2025</div>
+    </div>
+    <p class="company">Flat.mx (Clau.com) · Remote</p>
+    <ul class="bullets">
+      <li>Built a property ingestion and deduplication pipeline that aggregated listings from around 10 partner portals, each with thousands of properties.</li>
+      <li>Detected duplicate listings across portals from key attributes, and tracked availability, sold status, and changes to price and property details (such as bathrooms) across a large inventory.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head">
+      <div class="role">Backend Engineer</div>
+      <div class="dates">October 2019 – March 2022</div>
+    </div>
+    <p class="company">Mercado Libre · On-site</p>
+    <ul class="bullets">
+      <li>Built and maintained high-throughput notification processing for KYC, notifying millions of users via email, push, and periodic notifications.</li>
+      <li>Worked on the KYC (Know Your Customer) and Fraud Prevention team, supporting security measures and regulatory compliance for customer identity verification.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head">
+      <div class="role">Full Stack Developer</div>
+      <div class="dates">May 2019 – October 2019</div>
+    </div>
+    <p class="company">Devsar · On-site</p>
+    <ul class="bullets">
+      <li>Developed and deployed websites for financial institutions as part of a software-factory team, delivering production-ready sites to a high quality standard.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head">
+      <div class="role">Full Stack Developer</div>
+      <div class="dates">July 2017 – October 2019</div>
+    </div>
+    <p class="company">Dirección Provincial de Gobierno Digital · On-site</p>
+    <ul class="bullets">
+      <li>Delivered official information and digital citizen support through digital channels, addressing citizen needs.</li>
+      <li>Managed information through digital systems in support of citizen-facing services.</li>
+    </ul>
+  </article>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <article class="job">
+    <div class="edu-head">
+      <div class="role">Analista Programador Universitario <span style="font-weight:450; font-style:italic;">(University Programmer Analyst)</span></div>
+      <div class="dates">January 2010 – January 2016</div>
+    </div>
+    <p class="edu-inst">Facultad de Informática — Universidad Nacional de La Plata</p>
+  </article>
+</section>
+
+<section>
+  <h2>Languages</h2>
+  <p class="langs">Spanish — Native · English — Professional</p>
+</section>
+
+</body>
+</html>

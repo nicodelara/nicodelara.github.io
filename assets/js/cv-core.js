@@ -19,6 +19,7 @@
     present: { es: "Actualidad", en: "Present" },
     downloadPdf: { es: "Descargar CV en PDF", en: "Download CV as PDF" },
     pdfShort: { es: "PDF", en: "PDF" },
+    atsVersion: { es: "Versión ATS (texto plano)", en: "ATS version (plain text)" },
     toDark: { es: "Activar modo oscuro", en: "Switch to dark mode" },
     toLight: { es: "Activar modo claro", en: "Switch to light mode" },
     language: { es: "Idioma", en: "Language" },
@@ -112,6 +113,7 @@
     }
     function siteUrl() { return String((cv.meta && cv.meta.url) || "").replace(/\/?$/, "/"); }
     function pdfFile(l) { return String(t((cv.profile || {}).name) || "CV").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "") + "-CV-" + (l || lang).toUpperCase() + ".pdf"; }
+    function pdfAtsFile(l) { return pdfFile(l).replace(/-CV-(EN|ES)\.pdf$/, "-CV-ATS-$1.pdf"); }
     function skillName(s) { return t(typeof s === "object" && s && s.name !== undefined ? s.name : s); }
     function skillItem(s) { return typeof s === "object" && s && s.name !== undefined ? s : { name: s }; }
     function isCurrent(e) { return !e.end; }
@@ -230,6 +232,7 @@
           }).join("") +
         "</div>" +
         '<button type="button" class="icon-btn" id="theme-toggle" aria-label="' + esc(ui("toDark")) + '" title="' + esc(ui("toDark")) + '" aria-pressed="false">' + icon("moon") + "</button>" +
+        '<a class="ats-link" id="ats-link" href="' + esc(pdfAtsFile()) + '" download type="application/pdf">' + esc(ui("atsVersion")) + "</a>" +
         '<a class="btn-primary" id="pdf-link" href="' + esc(pdfFile()) + '" download type="application/pdf" aria-label="' + esc(ui("downloadPdf")) + '">' +
           icon("download") + '<span class="long">' + esc(ui("downloadPdf")) + '</span><span class="short" aria-hidden="true">' + esc(ui("pdfShort")) + "</span>" +
         "</a>";
@@ -251,7 +254,7 @@
     return {
       lang: lang, t: t, ui: ui, esc: esc, icon: icon, list: list,
       parseYM: parseYM, isoYM: isoYM, fmtYM: fmtYM, periodText: periodText, duration: duration, timeRange: timeRange,
-      displayUrl: displayUrl, siteUrl: siteUrl, pdfFile: pdfFile, skillName: skillName, skillItem: skillItem, isCurrent: isCurrent,
+      displayUrl: displayUrl, siteUrl: siteUrl, pdfFile: pdfFile, pdfAtsFile: pdfAtsFile, skillName: skillName, skillItem: skillItem, isCurrent: isCurrent,
       sidebarHTML: sidebarHTML, mainHTML: mainHTML, controlsHTML: controlsHTML, footerHTML: footerHTML,
     };
   }

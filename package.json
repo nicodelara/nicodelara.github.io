@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "pdf": "node scripts/pdf.mjs",
+    "pdf:ats": "bash scripts/ats/render.sh",
     "all": "node scripts/build.mjs && node scripts/pdf.mjs"
   },
   "devDependencies": {
